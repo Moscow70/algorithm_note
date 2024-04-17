@@ -32,6 +32,11 @@ int main () {
     }
     int res;
     res = recursion(0, 0);
+    printf("%d", res);
     system("pause");
     return 0;
 }
+
+/*
+注意一下全局变量的运用和递归算法的写法
+*/
