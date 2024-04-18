@@ -9,7 +9,7 @@ int recursion(int n) {
         return 1;
     }
     else if (n == 2) {
-        return 1;
+        return 2;
     }
     else {
         return recursion(n - 1) + recursion(n - 2);
@@ -21,7 +21,7 @@ int main () {
     scanf("%d", &n);
     int res;
     res = recursion(n);
-    printf("%d", n);
+    printf("%d", res);
     system("pause");
     return 0;
 }
