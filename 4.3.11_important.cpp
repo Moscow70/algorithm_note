@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 
@@ -73,6 +74,7 @@ int main () {
     scanf ("%d", &n);
     int cx, cy;
     scanf("%d %d", &cx, &cy);
+    n = (int)pow(2.0, 1.0 * n);
     recursion(n, 1, 1, cx, cy);
     sort(datas.begin(), datas.end(), cmp);
     for (int i = 0; i < datas.size(); i++) {
