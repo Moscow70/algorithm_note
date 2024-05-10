@@ -4,14 +4,14 @@
 using namespace std;
 
 int recursion(int n, int bound) {
-    if (n <=0 || bound <= 1) {
+    if (n <= 1 || bound <= 0) {
         return 0;
     }
     else {
         int ans = 0;
         for (int i = 1; i <= bound; i++) {
             ans = ans + recursion(n - i, i);
-            if (n - i > 0 && n - i <= i && n - i < bound) {
+            if (n - i > 0 && n - i <= i && n - i <= bound) {
                 ans++;
             }
         }
